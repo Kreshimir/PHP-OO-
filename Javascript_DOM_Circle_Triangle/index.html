@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Circle and Triangle</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/calculate.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Circle Area and Perimeter</h2>
+  <p>Enter Radius:</p>
+  <form>
+    <div class="form-group">
+      <label for="radius">Radius:</label>
+      <input type="text" class="form-control" id="radius">
+    </div>
+    <div class="form-group">
+        <button type="button" class="btn btn-default" onclick="Calc_CircleArea()">Get Area</button>
+        <button type="button" class="btn btn-default" onclick="Calc_CirclePerimeter()">Get Perimeter</button>
+        <button type="button" class="btn btn-default" onclick="Clear_Circle()">Clear</button>
+    </div>
+    <div class="form-group">
+      <label for="result">Result:</label>
+      <p id="circle_result"></p>
+    </div>
+  </form>
+
+  <h2>Triangle Area and Perimeter</h2>
+  <p>Enter lengths (a,b,c) for perimeter:</p>
+  <form>
+    <div class="form-group">
+      <label for="a">a (length):</label>
+      <input type="text" class="form-control" id="a">
+    </div>
+    <div class="form-group">
+        <label for="b">b (length):</label>
+        <input type="text" class="form-control" id="b">
+    </div>
+    <div class="form-group">
+        <label for="c">c (length):</label>
+        <input type="text" class="form-control" id="c">
+    </div>
+    <p>Enter base length anf height for triangle area:</p>
+    <div class="form-group">
+      <label for="base">base length(a or b or c):</label>
+      <input type="text" class="form-control" id="base">
+    </div>
+    <div class="form-group">
+        <label for="height">height:</label>
+        <input type="text" class="form-control" id="height">
+    </div>
+    <div class="form-group">
+        <button type="button" class="btn btn-default" onclick="Calc_TriangleArea()">Get Area</button>
+        <button type="button" class="btn btn-default" onclick="Calc_TrianglePerimeter()">Get Perimeter</button>
+        <button type="button" class="btn btn-default" onclick="Clear_Triangle()">Clear</button>
+    </div>
+    <div class="form-group">
+      <label for="result">Result:</label>
+      <p id="triangle_result"></p>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
